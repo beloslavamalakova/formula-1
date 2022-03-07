@@ -134,4 +134,4 @@ dmypy.json
 .pyre/
 
 #data
-.csv
+*.csv
