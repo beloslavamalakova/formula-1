@@ -100,3 +100,7 @@ df_teams_points = pd.DataFrame(points_teams_array, columns=('name','year','point
 view_drivers = df_drivers_points[df_drivers_points['year'] == 2021]
 view_drivers = view_drivers[view_drivers['points'] > 0]
 display(view_drivers[view_drivers['year'] == 2021].sort_values(by=['points'], ascending=False))
+
+view_teams = df_teams_points[df_teams_points['year'] == 2020]
+view_teams = view_teams[view_teams['points'] > 0]
+print(view_teams[view_teams['year'] == 2020].sort_values(by=['points'], ascending=False))
