@@ -3,6 +3,7 @@ import pandas as pd
 import sklearn
 import seaborn as sns
 import matplotlib.pyplot as plt
+from IPython.display import display
 
 df_drivers= pd.read_csv('/home/beloslava/Projects/random/formula-1/data/drivers.csv', na_values='\\N')
 df_circuits= pd.read_csv("/home/beloslava/Projects/random/formula-1/data/circuits.csv", na_values='\\N')
@@ -18,6 +19,5 @@ df_results= pd.read_csv("/home/beloslava/Projects/random/formula-1/data/results.
 df_seasons= pd.read_csv("/home/beloslava/Projects/random/formula-1/data/seasons.csv", na_values='\\N')
 df_status= pd.read_csv("/home/beloslava/Projects/random/formula-1/data/status.csv", na_values='\\N')
 
-df_drivers.head(n=10)
-
-
+display(df_drivers.head(n=10))
+display(df_results.head(n=20))
